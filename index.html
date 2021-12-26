@@ -50,7 +50,7 @@
         }
 
         .btn2 {
-            background-color:  #4B0082;
+            background-color: indigo;
             color: #fff;
         }
 
@@ -59,10 +59,41 @@
             color: #fff;
         }
 
+        .yeah {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #000;
+            text-shadow: 1px 1px #FF0000;
+        }
+
+        .yeah2 {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #000;
+            text-shadow: 1px -1px #9acd32;
+        }
+
+        .yeah3 {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-stroke-width: 2px;
+            text-shadow: 1px 1px #bf00ff;
+        }
+
 
         @media screen and (max-width:670px) {
             .logo {
                 padding-top: 20%;
+            }
+        }
+
+        @media screen and (max-width: 330px) {
+            .yeah2 {
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: #000;
+                text-shadow: 1px 1px #9acd32;
+
             }
         }
     </style>
@@ -72,7 +103,10 @@
 
 <body>
     <div class="logo">
-        <h1 class="fw-bold display-3 text-center text-light">MEME USEFUL INDONESIA</h1>
+        <h1 class="fw-bold display-3 text-center text-light"><span class="yeah" style="color:red">MEME</span> <span
+                class="yeah2" style="color:#BF00FF">USEFUL</span>
+            <span class=yeah3>INDONESIA</span>
+        </h1>
     </div>
 
     <div class="d-grid gap-3 col-8 col-lg-2 mx-auto mt-3 ">
@@ -85,7 +119,7 @@
         <a href="polosan.html" class="btn btn3 " role="button">POLOSAN MEME</a>
         <a href="https://shopee.co.id/thelogo_15" class="btn btn-primary " role="button">TOKO SHOPEE SAYA</a>
     </div>
-   
+
 
 
     <div class="kons">
