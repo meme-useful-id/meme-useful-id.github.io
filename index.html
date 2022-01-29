@@ -28,7 +28,22 @@
 
     <style>
       body {
-      background-color: #212529;
+        background-image: url(images/rem.jpg);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 2;
+      }
+
+      body::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgba(21, 20, 51, 0.8);
+        z-index: -1;
       }
 
       .logo {
@@ -37,45 +52,29 @@
       }
 
       .yeah {
-       color: #ff0000;
+        color: #ff0000;
       }
 
       .yeah2 {
-       color: #9acd32;
+        color: #9acd32;
       }
 
       .yeah3 {
-       color: #bf00ff;
+        color: #bf00ff;
       }
-      
+
       .btn {
         border-radius: 20px;
-
       }
 
       .btn-sub {
-        border:1px solid #ffc107;
+        border: 1px solid #ffc107;
         color: #fff;
       }
 
       .btn-sub:hover {
         background-color: #ffc107;
         transition: 0.4s;
-      }
-
-      @media screen and (max-width: 670px) {
-        .logo {
-          padding-top: 20%;
-        }
-      }
-
-      @media screen and (max-width: 330px) {
-        .yeah2 {
-          -webkit-text-fill-color: transparent;
-          -webkit-text-stroke-width: 2px;
-          -webkit-text-stroke-color: #000;
-          text-shadow: 1px 1px #9acd32;
-        }
       }
     </style>
   </head>
@@ -88,7 +87,7 @@
       </h1>
     </div>
 
-    <div class="d-grid gap-5 col-8 col-lg-2 mx-auto mt-3">
+    <div class="d-grid gap-5 col-8 col-md-3 col-lg-3 mx-auto mt-3">
       <a href="group.html" class="border-3 btn btn-sub fw-bold" role="button">GROUP MUI</a>
       <a href="https://trakteer.id/meme_useful.id " class="border-3 btn btn-sub fw-bold" role="button">DONATE TO ADMIN</a>
       <a href="infopp.html" class="border-3 btn btn-sub fw-bold" role="button">INFO PAID PROMOTE</a>
@@ -96,9 +95,6 @@
       <a href="polosan.html" class="border-3 btn btn-sub fw-bold" role="button">POLOSAN MEME</a>
       <a href="https://shopee.co.id/themeoxs?shop=637726550&tab=7" class="border-3 btn btn-sub fw-bold mb-5" role="button">TOKO SHOPEE SAYA</a>
     </div>
-
-
-
 
     <!-- DATA AOS SCRIPT-->
     <script>
