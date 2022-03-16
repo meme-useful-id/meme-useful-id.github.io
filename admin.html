@@ -69,53 +69,111 @@
         color: #bf00ff;
       }
 
-      section {
-        margin: auto;
-        display: flex;
-        margin-bottom: 50px;
-      }
-
-      .btn {
-        border: 1px solid #000;
-        border-radius: 20px;
-      }
-
-      hr {
-        border: 4px solid #ffc107;
-       
-      }
-
-      .btn-neon {
-        border: 1px solid #39ff14;
-        border-radius: 20px;
-        color: #fff;
-        font-weight: 800;
-      }
-
-      .btn-neon:hover {
-        font-weight: 800;
-        background-color: #39ff14;
-        color: rgba(21, 20, 51, 0.8);
-        box-shadow: 0 0 50px #39ff14;
-        border: 1px solid #000;
-      }
-
       .tbl {
-       text-align: center;
+        text-align: center;
+      }
+      .btn {
+        border: 2px solid greenyellow;
+        color: white;
+      }
+      .btn:hover {
+        background-color: greenyellow;
+        color: black;
+        font-weight: 700;
+      }
+      .team {
+        position: relative;
+      }
+      .team .container {
+        position: relative;
+        z-index: 10;
+      }
+      .team .member {
+        margin-bottom: 80px;
+        position: relative;
+      }
+      .team .member .pic {
+        overflow: hidden;
+      }
+      .pic {
+        border-radius: 20px;
+      }
+      .team .member .member-info {
+        border-radius: 15px;
+        border: 2px solid black;
+        position: absolute;
+        bottom: -50px;
+        left: 20px;
+        right: 20px;
+        background: #fff;
+        padding: 20px 15px;
+        color: #15222b;
+        box-shadow: var(--box-shadow);
+        overflow: hidden;
+        transition: 0.5s;
+        font-weight: 700;
+      }
+      .team .member .bawah {
+        bottom: -100px;
+      }
+      .team .member h4 {
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #15222b;
+        position: relative;
+        padding-bottom: 10px;
+      }
+      .team .member h4::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 1px;
+        background: #7fa5c0;
+        bottom: 0;
+        left: 0;
+      }
+      .team .member span {
+        font-style: italic;
+        display: block;
+        font-size: 13px;
+      }
+      .team .member .social {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+      }
+      .team .member .social a {
+        transition: color 0.3s;
+        color: #477392;
+      }
+      img {
+        border-radius: 20px;
+        width: 600px;
+        height: 600px;
+        border: 4px solid #ffc107;
+      }
+      .team .member .social a:hover {
+        color: #ff4a17;
+      }
+      .team .member .social i {
+        font-size: 16px;
+        margin: 0 2px;
+      }
+      @media (max-width: 992px) {
+        .team .member {
+          margin-bottom: 110px;
+        }
       }
 
-      .bor {
-        border: 6px solid #ffc107;
-      }
-
-      @media screen and (max-width: 991.98px) {
-        section {
-          display: block;
+      @media (max-width: 320px) {
+        .marginatas {
+          margin-top: 30px;
         }
       }
     </style>
   </head>
-
   <body>
     <div class="hero vh-100 d-flex align-items-center">
       <div class="container">
@@ -126,41 +184,55 @@
         </div>
       </div>
     </div>
-
-    <section id="yok">
-      <img
-        src="https://blogger.googleusercontent.com/img/a/AVvXsEgYF5d91LOzQOX0y2eqWe68rb7acqAJwAuzB3T3Oz8n3z-svEhFd2ezfPUELqjXx7_wTd2x76gfCQgmHdoOgsBLvDQSKyHU8PZZeWbUu6q43vi6LVDxWVIg3WPXs7hJNURlBoenzJlaxjztARNYFQ0ZjoXKbHL5bRTN3K37BCwx0y2uHAadRGrY5TQqPA=s320"
-        class="rounded-circle mx-auto d-block bor mt-5"
-        style="width: 200"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        alt=""
-      />
-      <div class="aos1 text-lg-center text-white text-md-center mt-5" data-aos="fade-right" data-aos-duration="1000" style="font-family: Charter">
-        <p class="text-dark">.</p>
-        <p class="fw-bold fs-1 text-center text-warning">NOBEL (NBL)</p>
-        <p class="fst-italic fw-bold text-center">( FOTO SAMARAN )</p>
-        <p class="fs-5 ok px-2">Perkenalkan nama gw nobel bisa di panggil NBL, gw adalah owner dari Meme Useful Indonesia.</p>
+    <section id="team" class="team section-bg mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic">
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEgYF5d91LOzQOX0y2eqWe68rb7acqAJwAuzB3T3Oz8n3z-svEhFd2ezfPUELqjXx7_wTd2x76gfCQgmHdoOgsBLvDQSKyHU8PZZeWbUu6q43vi6LVDxWVIg3WPXs7hJNURlBoenzJlaxjztARNYFQ0ZjoXKbHL5bRTN3K37BCwx0y2uHAadRGrY5TQqPA=s320"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="member-info bawah">
+                <h4>NOBEL</h4>
+                <h6 class="fst-italic">(Foto samaran)</h6>
+                <span>Perkenalkan nama gw nobel bisa di panggil NBL, gw adalah owner dari Meme Useful Indonesia.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 marginatas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic">
+                <img
+                  src="https://blogger.googleusercontent.com/img/a/AVvXsEjVB36M9hBcX395gJChPxCINRBcQz_9WSp4PnaibFFfsP-bEVh7W7_LXTGEDdllo3PbgMzIeJnPKhNU2CFiGizHBR9DS21cQ0i6__HFHbpC_45REKJhgPgOBiE64oLSAbK2y2Asd0ik_F5jRCD7tRkpkD0ngbfRulEBC3iiG1y-pWiAC-6QN2uUKnZs2g=s320"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="member-info">
+                <h4>GLIN</h4>
+                <span>Perkenalkan gw Glin, gw adalah Direktur di Meme Useful Indonesia.</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="IMAGES/rasyaANJING.jpg" class="img-fluid" alt="" /></div>
+              <div class="member-info">
+                <h4>RYUK</h4>
+                <span>Perkenalkan gw Rasya alias Ryuk dan gw adalah jendral MUI</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <hr />
-    <section>
-      <div class="test3" data-aos-duration="1000" data-aos="fade-right">
-        <p class="fw-bold fs-1 text-center  pt-3 text-warning">GLIN</p>
-        <p class="fs-5 px-2 ok2 text-light text-md-center">Perkenalkan Glin, dia adalah Direktur di Meme Useful Indonesia.</p>
-      </div>
-      <img
-        src="https://blogger.googleusercontent.com/img/a/AVvXsEjVB36M9hBcX395gJChPxCINRBcQz_9WSp4PnaibFFfsP-bEVh7W7_LXTGEDdllo3PbgMzIeJnPKhNU2CFiGizHBR9DS21cQ0i6__HFHbpC_45REKJhgPgOBiE64oLSAbK2y2Asd0ik_F5jRCD7tRkpkD0ngbfRulEBC3iiG1y-pWiAC-6QN2uUKnZs2g=s320"
-        class="mx-auto d-block  bor"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-        alt=""
-      />
-    </section>
-
     <div class="tbl">
-    <a href="index.html" class="btn btn-neon  mt-5 mb-5">BACK TO MENU</a>
-</div>
+      <a href="index.html" class="btn mt-5 mb-5">BACK TO MENU</a>
+    </div>
     <!-- DATA AOS SCRIPT-->
     <script>
       AOS.init();
@@ -168,3 +240,4 @@
     <!-- UNTIL HERE -->
   </body>
 </html>
+
