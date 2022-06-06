@@ -1,0 +1,45 @@
+:root {
+  --primary: #0d6efd;
+  --dark: #212529;
+  --dark2: #2e343a;
+  --body: #888;
+  --white: #ffffff;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #212529;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+  margin-top: 10px;
+}
+.wraper {
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+.btn-p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+}
+
+.btn2 {
+  color: white;
+  border: 2px solid #ffc107;
+}
+
+.btn3 {
+  border: 2px solid white;
+}
+
+.bg-dark2 {
+  background-color: var(--dark2);
+}
+
