@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-main {
+  background-color: var(--bs-dark-text);
+  color: var(--bs-body-bg);
+}
+
+.wrapper {
+  margin-top: -200px;
+}
+
+.wrapper2 {
+  margin-top: -130px;
+}
+
+.border-ku {
+  border-left: 7px solid;
+  height: 60px;
+}
+
+.margin-kebawah {
+  margin-bottom: 100px;
+}
+
+
