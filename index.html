@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUI | Meme Useful Indonesia</title>
+    <!--================ BOOTSTRAP 5 LINK ONLINE ================ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- ================ AOS SISTEM (ANIMATION) ================ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- ================ MENYAMBUNGKAN KE style.css ================ -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ================ FONT AWESOME ICON ================ -->
+    <script src="https://kit.fontawesome.com/357301bb56.js" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    .lika {
+      display: none;
+    }
+    .chiken-butt {
+      display: none;
+      /* ini kok bikin kek gini sih anjir aowwkwkw */
+    }
+  </style>
+  <body>
+    <!-- menu utama -->
+    <section class="wrapper">
+      <div class="hero vh-100 d-flex align-items-center" style="margin-top: 150px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mx-auto text-center">
+              <h4 class="mb-5 display-3 fw-medium" style="-webkit-text-stroke: 0.5px black"><span class="text-danger">MEME</span><span style="color: greenyellow"> USEFUL</span><span style="color: rgb(175, 4, 175)"> INDONESIA</span></h4>
+              <button class="btn btn-lg btn-light" id="sosial">sosial media</button>
+            </div>
+            <div class="sosial-media mt-4 d-flex justify-content-center">
+              <div class="fade-down" id="media" style="display: none">
+                <div class="border border-2 border-light p-4 pb-5 rounded">
+                  <p class="text-center text-white fw-medium fs-5">instagram</p>
+                  <a href="https://www.instagram.com/sawnedcom/?hl=id" style="color: #f29727"><i class="bi bi-instagram color-ku me-2"></i>sawnedcom</a>
+                  <br />
+                  <br />
+                  <a href="https://www.instagram.com/meme_useful.id/?hl=id" style="color: #f29727"><i class="bi bi-instagram color-ku me-2 mt-5"></i>meme_useful.id</a>
+                  <br />
+                  <br />
+                  <a href="https://www.instagram.com/meme_useful2.id/?hl=id" style="color: #f29727"><i class="bi bi-instagram color-ku me-2"></i>meme_useful.id2</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="all" id="all">
+      <section class="margin-kebawah">
+        <div class="wrapper2">
+          <div class="d-grid col-8 col-md-4 col-lg-3 mx-auto" style="gap: 60px">
+            <div class="border-ku">
+              <p class="fs-5 ms-2 mt-2 text-white">Most Important<i class="bi bi-patch-check fs-5 ms-2"></i></p>
+            </div>
+            <!-- toko affiliate -->
+            <a href="https://lynk.id/memeusefulid_disimpics" class="btn btn2 btn-light btn-lg fs-5" role="button">toko saya</a>
+            <a href="https://wa.wizard.id/9bbd28" class="btn btn2 btn-light btn-lg fs-5" role="button">jasa buat website</a>
+            <a href="" class="btn btn2 btn-light btn-lg fs-5" onclick="alert('belom buat sabar ya!')" role="button">download film gratis</a>
+            <!--  -->
+            <div class="border-ku">
+              <p class="fs-5 ms-2 mt-2 text-white">Lainnya <i class="bi bi-cup-hot fs-5 ms-2"></i></p>
+            </div>
+            <!-- button group dan seisinya -->
+            <button class="btn btn-light btn-lg fs-5" id="tombol-muncul" role="button" onclick="tampilkanKonten()">group</button>
+            <!-- 2 -->
+            <div id="konten" class="fade-down border border-1 p-3 rounded" style="display: none">
+              <h6 class="fs-5 ms-2 mt-2 mb-5 text-center text-white">GROUP</h6>
+              <a onclick="whatsapp()" class="btn btn2 btn-light btn-lg fs-5 mx-auto d-block" role="button">whatsapp</a>
+              <br />
+              <a href="" onclick="discord()" class="btn btn2 btn-light btn-lg fs-5 mx-auto d-block" role="button">discord</a>
+              <p class="fs-5">maaf tapi group saat ini belum tersedia. silahkan tekan tombol kembali</p>
+              <a href="index.html" class="btn btn-light btn-lg fs-5 mx-auto d-block mt-3">kembali</a>
+            </div>
+            <!-- INFO PAID PROMOTE -->
+            <button class="btn btn-light btn-lg fs-5" id="tombol-muncul2" onclick="tampilkanKonten2()">info paid promote</button>
+            <!-- 2 -->
+            <div id="konten2" class="border border-1 p-3 rounded fade-down" style="display: none">
+              <h6 class="fs-5 ms-2 mt-2 mb-5 text-center text-white">INFO PAID PROMOTE</h6>
+              <div class="">
+                <div class="container">
+                  <p class="title fs-5 pt-3">info paid promote</p>
+                  <p class="fs-5">paket 1 post + bebas slide : 10K</p>
+                  <a href="https://wa.wizard.id/d3c76c" class="btn btn-light btn-lg mb-3 fs-5">pesan !</a>
+                  <button id="tombol-muncul-pp" onclick="tombolMunculpp()" class="btn btn-light btn-lg fs-5 mb-3">info detail</button>
+                  <div id="konten-pp" class="fade-down" style="display: none">
+                    <p class="fs-5">mempromosikan produk dll di akun kami, 10k satu postingan dan slide nya bebas</p>
+                    <button id="back-pp" onclick="backPp()" class="mb-3 btn btn-light btn-lg fs-5 mt-2">kembali</button>
+                  </div>
+                </div>
+              </div>
+              <a href="index.html" class="btn btn-light btn-lg fs-5 mx-auto d-block mt-3">kembali</a>
+            </div>
+            <!-- DONASI UNTUK ADMIN -->
+            <a href="https://saweria.co/nobel" class="btn btn-light btn-lg fs-5">donasi untuk admin</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="text-center">
+      <p class="fs-5">made by nobel</p>
+      <p class="fs-5">@sawnedcom</p>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
