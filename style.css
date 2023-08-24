@@ -1,0 +1,82 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background 1s ease;
+  background-color: #272829;
+}
+
+p {
+  color: white;
+}
+
+.btn {
+  background-color: #61677A;
+  border: none;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #61677A;
+  color: white;
+}
+
+.wrapper {
+  margin-top: -200px;
+}
+
+.wrapper2 {
+  margin-top: -130px;
+}
+
+.border-ku {
+  border-left: 7px solid white;
+  height: 60px;
+}
+
+.margin-kebawah {
+  margin-bottom: 100px;
+}
+i {
+  color: white;
+}
+.fade-down {
+  opacity: 0;
+  animation-name: fadedown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadedown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: medium;
+  font-size: 20px;
+}
+
+.color-ku {
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.warna-awal {
+  background-color: #16161a;
+}
+
+.scroll {
+  background-color: #232946;
+}
